@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.contianer{
+    width: 30%;
+    background-color: rgba(24, 22, 22, 0.678);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+.iput .myinput{
+    width: 80%;
+    margin: auto;
+    display: block;
+    outline: none;
+    padding: 20px 10px;
+}
+.grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(80px,1fr));
+    gap: 10px;
+}
+.grid input{
+    display: block;
+    font-size: 20px;
+    background:none;
+    border: none;
+    color: white;
+    box-shadow: 0 0 1px white;
+    background-color: red;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.grid input:hover{
+opacity: .7;
+background-color:black;
+}
