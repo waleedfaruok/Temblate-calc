@@ -1,43 +1,54 @@
 *{
     padding: 0;
     margin: 0;
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     background-color: black;
 }
+
 .contianer{
-    width: 30%;
-    background-color: rgba(24, 22, 22, 0.678);
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 5px;
+    width: 60%;
+    margin: 100px auto;
+    padding: 20px 0;
 }
-.iput .myinput{
-    width: 80%;
+@media(max-width:567px){
+    .contianer{
+        width: 100%;
+    }
+}
+table{
+    margin: 10px auto;
+}
+@media(max-width:567px){
+    table{
+        margin: 5px auto;
+    }
+}
+.myinput{
+    display: block;
     margin: auto;
-    display: block;
+    padding: 13px;
+    width: 220px;
     outline: none;
-    padding: 20px 10px;
+    border: none;
 }
-.grid{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(80px,1fr));
-    gap: 10px;
-}
-.grid input{
-    display: block;
-    font-size: 20px;
+
+.btn,.equl,.clear{
     background:none;
     border: none;
-    color: white;
-    box-shadow: 0 0 1px white;
+    color: black;
     background-color: red;
-    padding: 10px 0;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
     cursor: pointer;
     transition: .2s ease-in-out;
 }
-.grid input:hover{
-opacity: .7;
-background-color:black;
+.btn:hover,.equl:hover,.clear:hover{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
 }
