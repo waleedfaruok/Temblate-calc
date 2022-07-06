@@ -6,14 +6,29 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: black;
+    background-color:whitesmoke;
 }
 
+/* start contianer */
 .contianer{
-    width: 60%;
+    width: 100%;
     margin: 100px auto;
-    padding: 20px 0;
+    padding: 20px ;
 }
+/* end contianer */
+
+/* start title calcluate */
+.h3{
+    text-transform: capitalize;
+    font-weight: bold;
+    width: fit-content;
+    margin: 10px auto;
+    color: purple;
+}
+
+/* end title calcluate */
+
+/* start media */
 @media(max-width:567px){
     .contianer{
         width: 100%;
@@ -21,12 +36,17 @@ body{
 }
 table{
     margin: 10px auto;
+    box-shadow: 0 0 2px black;
 }
 @media(max-width:567px){
     table{
         margin: 5px auto;
     }
 }
+
+/* end media */
+
+/* start table  */
 .myinput{
     display: block;
     margin: auto;
@@ -34,13 +54,16 @@ table{
     width: 220px;
     outline: none;
     border: none;
+    background: none;
+    font-weight: bold;
+    box-shadow: 0 0 2px black;
 }
 
 .btn,.equl,.clear{
     background:none;
     border: none;
     color: black;
-    background-color: red;
+    background-color:whitesmoke;
     width: 60px;
     height: 60px;
     font-size: 20px;
@@ -48,7 +71,16 @@ table{
     transition: .2s ease-in-out;
 }
 .btn:hover,.equl:hover,.clear:hover{
-    opacity: 0.6;
-    background-color: black;
+    background-color: purple;
     color: white;
 }
+.activ{
+    background-color: purple;
+    color: white;
+    transition: .3s all ease-in-out;
+}
+.activ:hover{
+    opacity: .8;
+}
+
+/* end table */

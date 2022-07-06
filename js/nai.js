@@ -4,6 +4,8 @@ let btn = document.getElementsByClassName("btn");
 let equl = document.querySelector(".equl");
 let clear = document.querySelector(".clear");
 
+
+// start calcluate
 for(let i = 0; i < btn.length; i++){
     btn[i].onclick = function(){
         myinput.value += this.value;
@@ -15,3 +17,4 @@ equl.onclick = function(){
 clear.onclick = function(){
     myinput.value = "";
 }
+// end calcluate
